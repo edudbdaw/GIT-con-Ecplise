@@ -1,36 +1,38 @@
 package figuras;
 
-public class Rectángulo extends Figura{
-private double base;
-private double altura;
+import java.awt.Color;
 
-public Rectángulo (double x, double y, Color color, double base, double altura){
-super (x, y, color);
-this.base = base;
-this.altura = altura;
-}
+public class Rectangulo extends Figura {
+    private double base;
+    private double altura;
 
-public double getBase(){
-return base;
-}
+    public Rectangulo(double x, double y, Color color, double base, double altura) {
+        super(x, y, color);
+        this.base = base;
+        this.altura = altura;
+    }
 
-public double getAltura(){
-return altura;
-}
+    public double getBase() {
+        return base;
+    }
 
-public void setBase(double base){
-this.base = base;
-}
+    public double getAltura() {
+        return altura;
+    }
 
-public void setAltura(double altura){
-this.altura = altura;
-}
+    public void setBase(double base) {
+        this.base = base;
+    }
 
-public double perímetro (){
-   return 2 * base + 2 * altura;
-}
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
 
-public double área (){ 
-   return base * altura;
-}
+    public double perimetro() {
+        return 2 * base + 2 * altura;
+    }
+
+    public double area() {
+        return base * altura;
+    }
 }
