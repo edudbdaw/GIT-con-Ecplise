@@ -2,12 +2,12 @@ package figuras;
 
 import java.awt.Color;
 
-public class Triángulo extends Figura{
+public class Triï¿½ngulo extends Figura{
 private double lado1;
 private double lado2;
 private double lado3;
 
-public Triángulo(double x, double y, Color color, double lado1, double lado2, double lado3){
+public Triï¿½ngulo(double x, double y, Color color, double lado1, double lado2, double lado3){
 super (x, y, color);
 this.lado1 = lado1;
 this.lado2 = lado2;
@@ -38,12 +38,12 @@ public void setLado3(double lado3){
 this.lado3 = lado3;
 }
 
-public double perímetro (){
+public double perï¿½metro (){
    return lado1 + lado2 + lado3;
 }
 
-public double área (){ 
-   double sp = perímetro() / 2;
+public double real (){ 
+   double sp = perï¿½metro() / 2;
    return Math.sqrt(sp * (sp - lado1) * (sp - lado2) * (sp - lado3)); 
 }
 }
